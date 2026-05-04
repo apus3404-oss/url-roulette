@@ -63,6 +63,7 @@ function init() {
     loadStats();
     updateTotalSites();
     setupEventListeners();
+    fetchGitHubStars(); // Fetch stars after DOM is ready
 }
 
 // Load stats from localStorage
@@ -368,9 +369,6 @@ async function fetchGitHubStars() {
         console.log('Could not fetch GitHub stars:', error);
     }
 }
-
-// Fetch stars on page load
-fetchGitHubStars();
 
 // Keyboard hint dismissal
 const keyboardHint = document.getElementById('keyboardHint');
