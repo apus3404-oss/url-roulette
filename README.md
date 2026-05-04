@@ -1,6 +1,10 @@
 # 🎰 URL ROULETTE
 
-Discover the weird & wonderful web with a single click. URL Roulette takes you to random interesting websites from a curated collection of 87+ sites.
+[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-Visit_Site-00ff88?style=for-the-badge)](https://apus3404-oss.github.io/url-roulette/)
+[![GitHub Stars](https://img.shields.io/github/stars/apus3404-oss/url-roulette?style=for-the-badge&color=ff0055)](https://github.com/apus3404-oss/url-roulette/stargazers)
+[![License](https://img.shields.io/badge/License-MIT-ffdd00?style=for-the-badge)](LICENSE)
+
+Discover the weird & wonderful web with a single click. URL Roulette takes you to random interesting websites from a curated collection of 212+ sites.
 
 ## ✨ Features
 
