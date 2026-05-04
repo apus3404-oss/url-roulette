@@ -355,6 +355,23 @@ if (document.readyState === 'loading') {
     init();
 }
 
+// Fetch GitHub stars count
+async function fetchGitHubStars() {
+    try {
+        const response = await fetch('https://api.github.com/repos/apus3404-oss/url-roulette');
+        const data = await response.json();
+        const starsElement = document.querySelector('.github-stars');
+        if (starsElement && data.stargazers_count !== undefined) {
+            starsElement.textContent = `★ ${data.stargazers_count}`;
+        }
+    } catch (error) {
+        console.log('Could not fetch GitHub stars:', error);
+    }
+}
+
+// Fetch stars on page load
+fetchGitHubStars();
+
 // Keyboard hint dismissal
 const keyboardHint = document.getElementById('keyboardHint');
 if (keyboardHint) {
